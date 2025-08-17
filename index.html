@@ -244,26 +244,24 @@
     }
 
     /* Responsive */
-    @media (max-width: 600px) {
-      .date { font-size: 42px; }
-      .name { font-size: 28px; }
-      .text { font-size: 18px; }
-    
-    #countdown {
-    gap: 10px; /* менші відступи */
+  @media (max-width: 600px) {
+  #countdown {
+    flex-direction: column; /* ставимо блоки вертикально */
+    align-items: center;    /* вирівнюємо по центру */
+    gap: 15px;              /* менші відступи */
   }
 
   #countdown div {
-    min-width: 60px;
-    padding: 10px;
+    width: 70%;        /* щоб виглядало красиво */
+    min-width: unset;  /* знімаємо жорстке обмеження */
   }
 
   #countdown span {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   #countdown small {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }
 
@@ -361,6 +359,7 @@
 </script>
 </body>
 </html>
+
 
 
 
